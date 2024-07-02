@@ -333,7 +333,7 @@ if ($env:TreatWarningsAsErrors -eq 'false') {
 }
 
 # disable terminal logger for now: https://github.com/dotnet/runtime/issues/97211
-$arguments += " /tl:false"
+$arguments += " /tlp:v=d"
 
 # Disable targeting pack caching as we reference a partially constructed targeting pack and update it later.
 # The later changes are ignored when using the cache.

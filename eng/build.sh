@@ -554,7 +554,7 @@ if [[ "${TreatWarningsAsErrors:-}" == "false" ]]; then
 fi
 
 # disable terminal logger for now: https://github.com/dotnet/runtime/issues/97211
-arguments="$arguments -tl:false"
+arguments="$arguments -/tlp:v=d"
 
 initDistroRid "$os" "$arch" "$crossBuild"
 
